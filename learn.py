@@ -33,7 +33,16 @@ print(df.iloc[2,1]) # 2 is row and 1 is column here
     # print(index, row['Name'])
 
 # filter 
-print(df.loc[df['Type 1']=="Grass"]) # Grass is a value which we want to filter from a particular column
+# print(df.loc[df['Type 1']=="Grass"]) # Grass is a value which we want to filter from a particular column
+
+# Sorting and describing
+# Mean Standard Count etc. 
+# print(df.describe())
+
+# Sort values by name 
 
 
+# print(df.sort_values('Name', ascending=False))#ascending and descending
+print(df.sort_values(['HP','Type 2'], ascending=[0,1]))#ascending and descending
+        
 
